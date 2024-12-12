@@ -4,14 +4,20 @@
 
 **Tech Stack**
 
-```
-**Chroma DB**
 
-```
-**React**
-**Open AI**
-**Python**
-**Flask**
+**Chroma DB** 
+
+
+**React** 
+**Open AI** 
+**Python** 
+**Flask** 
 
 **Description**
+
+
+## Installation and local setup 
+
+
+
 
