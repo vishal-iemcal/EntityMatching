@@ -18,6 +18,17 @@
 
 ## Installation and local setup 
 
+**Python Setup** 
+
+Make sure python is installed in your system , if not please follow the link to install relevant python version for yous system + [Python Installation](https://www.python.org/downloads/)
+
+
+
+
+
+**Chroma DB -  run the following commands** 
+
+
 
 
 
