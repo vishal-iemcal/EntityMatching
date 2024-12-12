@@ -4,17 +4,25 @@
 
 **Tech Stack**
 
+[React and Javascript](https://react.dev/) : 
+Popular UI front end framework 
+
+[Material UI](https://mui.com/material-ui/) : 
+Material UI is an open-source React component library that implements Google's Material Design. 
+
+[Flask](https://flask.palletsprojects.com/en/stable/) :  
+Framework to build python Apis 
+
+[Python](https://www.python.org/downloads/): 
+Backend Programming Language 
+[Chroma Database (Vector DB)](https://www.trychroma.com/): 
+Popular open source vector database that is designed to create, store and retrieve embeddings at scale with minimum latency. 
+
+[Seed Data](https://www.dolthub.com/repositories/mrbond/us-businesses)  
+Seed data of business entities has been downloaded from below website, 50k records have been downloaded and processed to use that data as input for the project. 
 
 **Chroma DB** 
 Follow the instructions from [ChromaDB website](https://www.trychroma.com/) to install chroma db in local system.
-
-
-**React** 
-**Open AI** 
-**Python** 
-**Flask** 
-
-**Description**
 
 
 ## Installation and local setup 
@@ -73,7 +81,7 @@ Run the file chroma_openai.py to seed the 50k seed data ogn the entity names and
 
 Running the embedding functions : The Entity name and address columns have been combined to create a document string which will is used to generate the embeddings. The embeddings can be created using default embedding function provided by Chroma db or by using embedding functions provide by partner platforms like OpenAI, Huggingface etc. If you wish to use OpenAI for embeddings , then create an openAI key and put that key into the .env file. A template of .env is provided in the github codebase.
 
-The view explains the high level Entity Matching High level workflow:
+The view explains the high level Entity Matching High level flow:
 
 ![System Flow](SystemD.png)
 
