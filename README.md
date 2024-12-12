@@ -73,7 +73,9 @@ Run the file chroma_openai.py to seed the 50k seed data ogn the entity names and
 
 Running the embedding functions : The Entity name and address columns have been combined to create a document string which will is used to generate the embeddings. The embeddings can be created using default embedding function provided by Chroma db or by using embedding functions provide by partner platforms like OpenAI, Huggingface etc. If you wish to use OpenAI for embeddings , then create an openAI key and put that key into the .env file. A template of .env is provided in the github codebase.
 
+The view explains the high level Entity Matching High level workflow:
 
+![System Flow](SystemD.png)
 
 
 
