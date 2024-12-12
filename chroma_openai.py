@@ -34,7 +34,7 @@ df1.drop(['name', 'business_type', 'state_registered', 'street_registered', 'cit
 
 print(df1.head(5))
 """
-"""with open('./us-businesses_master_50k_processed.csv', 'r') as file:
+with open('./us-businesses_master_50k_processed.csv', 'r') as file:
     reader = csv.DictReader(file)
     for row in reader:
         #print(row)
@@ -43,7 +43,7 @@ print(df1.head(5))
 for doc in documents:
     collection.upsert(ids=[doc["id"]] , documents=[doc["text"]])
 
-print('done step1')"""
+print('done step1')
 
 query_text = "ETB ENDTIMEBLESSING LLC LLC PA"
 results = collection.query(query_texts=[query_text] , n_results=4)

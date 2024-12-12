@@ -56,18 +56,23 @@ npm install
 npm run dev
 
 ```
+Install Material UI using following commands
+
+```
+npm install @mui/material @emotion/react @emotion/styled - install material ui
+npm install @mui/x-data-grid
+
+```
+
+
+
 The above command will start running the local version of the UI.
+**Load the seed data into the chroma db database**
 
+Run the file chroma_openai.py to seed the 50k seed data ogn the entity names and addreses. Once the seed data is loaded into the chroma database , a db folder should be created inside the home directory which should have the sqllite database. The chromadb database can be explored more by installing a chroma client using visual studio if you are instesrted in looking at how the collections and data is stored inside the chroma db database.
 
+Running the embedding functions : The Entity name and address columns have been combined to create a document string which will is used to generate the embeddings. The embeddings can be created using default embedding function provided by Chroma db or by using embedding functions provide by partner platforms like OpenAI, Huggingface etc. If you wish to use OpenAI for embeddings , then create an openAI key and put that key into the .env file. A template of .env is provided in the github codebase.
 
-
-
-
-
-
-
-
-**Chroma DB -  run the following commands** 
 
 
 
