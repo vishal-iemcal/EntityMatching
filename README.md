@@ -6,6 +6,7 @@
 
 
 **Chroma DB** 
+Follow the instructions from [ChromaDB website](https://www.trychroma.com/) to install chroma db in local system.
 
 
 **React** 
@@ -31,13 +32,34 @@ pip install Flask-cors
 ```
 
 
-**Set up virtual environment and activate the virtual environment** 
+**Set up virtual environment and activate the virtual environment , then install openai** 
 ``` 
 python3 -m venv .venv
 source .venv/bin/activate
+pip install openai
 ``` 
 
-Activate the virtual environment
+**Optional** Create an open api key by signing up in (https://openai.com/) , embeddings can also be created using default Embedding functions provided by chroma db.
+
+**Install node and react using following instructions**
+
+Download Node using the prebuilt installer from the [Node website](https://nodejs.org/en/download/prebuilt-installer)
+
+```
+npm create vite@latest
+
+```
+Follow the prompts of the above command to provide the project name and select react/ javascript project from the options
+
+```
+npm install
+npm run dev
+
+```
+The above command will start running the local version of the UI.
+
+
+
 
 
 
