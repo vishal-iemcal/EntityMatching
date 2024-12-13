@@ -23,17 +23,6 @@ documents = []
 
 #read documents from csv file
 
-"""df = pd.read_csv("./Master_Businesses.csv")
-df.drop(['filing_number', 'public', 'naics_2017', 'ein', 'sic4', 'parent', 'website', 'duns','zip5_registered', 'zip5_physical'], axis = 1, inplace = True)
-#df['text'] = df[['name', 'business_type', 'state_registered', 'street_registered', 'city_registered', 'zip5_registered', 'state_physical', 'street_physical', 'city_physical', 'zip5_physical', 'filing_number', 'public', 'naics_2017', 'ein', 'sic4', 'parent', 'website', 'duns']].agg(' '.join, axis=1)
-print(df.columns.tolist())
-df1 = df[:1000]
-df1['Combined'] = df[['name', 'business_type', 'state_registered', 'street_registered', 'city_registered', 'state_physical', 'street_physical', 'city_physical']].agg(' '.join, axis=1)
-df1.drop(['name', 'business_type', 'state_registered', 'street_registered', 'city_registered', 'state_physical', 'street_physical', 'city_physical'])
-
-
-print(df1.head(5))
-"""
 with open('./us-businesses_master_50k_processed.csv', 'r') as file:
     reader = csv.DictReader(file)
     for row in reader:
@@ -43,7 +32,9 @@ with open('./us-businesses_master_50k_processed.csv', 'r') as file:
 for doc in documents:
     collection.upsert(ids=[doc["id"]] , documents=[doc["text"]])
 
-print('done step1')
+print('##################The seed data embeddings successfully created in chroma database###################')
+
+print('##################Running a test search to validate ##################################################')
 
 query_text = "ETB ENDTIMEBLESSING LLC LLC PA"
 results = collection.query(query_texts=[query_text] , n_results=4)
